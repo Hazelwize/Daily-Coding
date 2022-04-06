@@ -45,3 +45,13 @@ const flip=(d, a)=>{
     }
   return arr; 
 }
+
+//https://www.codewars.com/kata/563b74ddd19a3ad462000054
+
+function stringy(size) {
+  let value = [];
+  for(let i = 0 ; i < size ; i++){
+    i % 2 == 0 ? value.push("1") : value.push('0');
+  } 
+  return value.join('');
+}
