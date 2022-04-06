@@ -34,3 +34,14 @@ const flip=(d, a)=>{
       return "Player 2 won!"
     }
   };
+
+//https://www.codewars.com/kata/58ca658cc0d6401f2700045f
+  function findMultiples(integer, limit) {
+    let arr = [];
+    let val = 0;
+    while( (integer + val) <= limit){
+      val += integer;
+      arr.push(val);
+    }
+  return arr; 
+}
