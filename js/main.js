@@ -71,3 +71,17 @@ class Kata {
     return (length * width * height)
   }
 }
+
+// Create a function that rounds to the next number divisible by 5
+//https://www.codewars.com/kata/55d1d6d5955ec6365400006d
+
+function roundToNext5(n){
+  if(n % 5 == 0){
+    return n;
+  }else{
+    while(n % 5 != 0){
+      n++;
+    }
+    return n;
+  } 
+}
