@@ -85,3 +85,17 @@ function roundToNext5(n){
     return n;
   } 
 }
+
+//Find the number of vowels in a string
+//https://www.codewars.com/kata/54ff3102c1bad923760001f3
+
+function getCount(str) {
+  let arr = ['a', 'e', 'i','o', 'u'];
+  let finalArr =[];
+  [...str].forEach(e1 => arr.forEach(e2 =>{
+    if(e1.toUpperCase() == e2.toUpperCase()){
+      finalArr.push(e1);
+    }
+  }))
+  return finalArr.length;
+}
