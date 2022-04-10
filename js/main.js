@@ -133,3 +133,11 @@ const arrayDiff = (a, b) => a.filter(e => {
 function betterThanAverage(cl, you) {
   return you > (cl.reduce((a,b) => a + b)) / cl.length;
 }
+
+//Comibined sliced and combined strings based on a given letter
+//https://www.codewars.com/kata/597bb84522bc93b71e00007e/javascript
+function stringMerge(string1, string2, letter){
+  string1 = string1.slice(0,(string1.indexOf(letter)))
+  string2 = string2.slice(string2.indexOf(letter))
+  return string1+string2;
+}
