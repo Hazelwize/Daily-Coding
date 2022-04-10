@@ -127,3 +127,9 @@ const arrayDiff = (a, b) => a.filter(e => {
     return e;
   }
 })
+
+//Compares a students grade with the class average, returns true if higher than class average
+//https://www.codewars.com/kata/5601409514fc93442500010b
+function betterThanAverage(cl, you) {
+  return you > (cl.reduce((a,b) => a + b)) / cl.length;
+}
