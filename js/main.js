@@ -118,3 +118,12 @@ function dropCap(n) {
     }
   }).join(' ')
 }
+
+//Compares two different arrays and returns the difference between them
+//https://www.codewars.com/kata/523f5d21c841566fde000009/javascript
+
+const arrayDiff = (a, b) => a.filter(e => {
+  if(!b.includes(e)){
+    return e;
+  }
+})
