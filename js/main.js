@@ -99,3 +99,22 @@ function getCount(str) {
   }))
   return finalArr.length;
 }
+
+//Return the length of the longest word in an array of words
+//https://www.codewars.com/kata/58670300f04e7449290000e5/javascript
+
+const longest = words => Math.max(...words.map(e => e.length));
+
+//Make the first letter of each word in a string capitalized if it is longer than two characters
+//https://www.codewars.com/kata/559e5b717dd758a3eb00005a/javascript
+
+function dropCap(n) {
+  let words = n.split(' ');
+  return words.map( e => {
+    if(e.length > 2){
+      return e[0].toUpperCase() + e.slice(1).toLowerCase();
+    }else{
+      return e;
+    }
+  }).join(' ')
+}
