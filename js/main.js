@@ -136,8 +136,30 @@ function betterThanAverage(cl, you) {
 
 //Comibined sliced and combined strings based on a given letter
 //https://www.codewars.com/kata/597bb84522bc93b71e00007e/javascript
+
 function stringMerge(string1, string2, letter){
   string1 = string1.slice(0,(string1.indexOf(letter)))
   string2 = string2.slice(string2.indexOf(letter))
   return string1+string2;
 }
+
+//Sorts a number < 1500 into the smalles increments set by an array
+//https://www.codewars.com/kata/5635e7cb49adc7b54500001c/javascript
+
+function solve(n) {
+  const arr = [500,200,100,50,20,10];
+  let bills = 0;
+  if( n <= 1500 && n % 10 == 0){
+    for(let i = 0; i < arr.length ; i++){
+      while(arr[i] <= n){
+        n -= arr[i];
+        bills++;
+      }
+    }
+    return bills;
+  }else{
+    return -1;
+  }
+}    
+  
+
