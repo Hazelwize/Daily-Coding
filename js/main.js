@@ -160,6 +160,22 @@ function solve(n) {
   }else{
     return -1;
   }
-}    
+}  
+
+//tells positions of vowels including 'y' in a string
+//https://www.codewars.com/kata/5680781b6b7c2be860000036
+
+function vowelIndices(word){
+  let arr = ['a', 'e', 'i', 'o', 'u', 'y'];
+  let vow = [];
+  word = [...word.toLowerCase()].map((e,i)=> {
+      for(let j = 0; j < arr.length; j++){
+        if( e == arr[j]){
+          vow.push(i+1);
+        }
+      }
+ })
+  return vow;
+}
   
 
