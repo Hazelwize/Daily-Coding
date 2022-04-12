@@ -177,5 +177,17 @@ function vowelIndices(word){
  })
   return vow;
 }
+
+//take a binary string and creates a parity bit for it based on even or odd
+//https://www.codewars.com/kata/5df261342964c80028345a0a
+
+function checkParity(parity, bin){
+  let num = [...bin].filter(e => e == '1');
+  if(parity == 'odd'){
+    return num.length % 2 != 0 ? 0 : 1;
+  }else{
+    return num.length % 2 == 0 ? 0 : 1;
+  }
+}
   
 
