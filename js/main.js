@@ -189,5 +189,12 @@ function checkParity(parity, bin){
     return num.length % 2 == 0 ? 0 : 1;
   }
 }
+
+//take any number and convert to binary 
+//https://www.codewars.com/kata/55606aeebf1f0305f900006f
+
+function toBinary(n){
+  return (n >>> 0).toString(2);
+ }
   
 
