@@ -196,5 +196,12 @@ function checkParity(parity, bin){
 function toBinary(n){
   return (n >>> 0).toString(2);
  }
+
+ //take a name and reverse the first and last name
+ //https://www.codewars.com/kata/559ac78160f0be07c200005a
+
+ function nameShuffler(str){
+  return str.split(' ').reverse().join(' ')
+}
   
 
