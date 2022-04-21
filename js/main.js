@@ -216,3 +216,17 @@ function isNarcissistic(n){
   })
   return total == +(n);
 }
+
+//Sort a string into Upper, Lower, Number, and Special characters
+//https://www.codewars.com/kata/5a29a0898f27f2d9c9000058
+
+function solve(s){
+  let arr = [0,0,0,0];
+  [...s].forEach(e => {
+    (e >= 'A' && e <= 'Z') ? arr[0] += 1 :
+    (e >= 'a' && e <= 'z') ? arr[1] += 1 :
+    (e >= 0 && e <= 9) ? arr[2] += 1:
+    arr[3] += 1 
+  })
+  return arr;
+}
