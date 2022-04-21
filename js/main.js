@@ -205,3 +205,14 @@ function toBinary(n){
 }
   
 
+//Find narcisistic numbers
+//https://www.codewars.com/kata/56b22765e1007b79f2000079
+
+function isNarcissistic(n){
+  n = String(n);
+  let total = 0;
+  [...n].forEach(e =>{
+    total += +(e ** n.length)
+  })
+  return total == +(n);
+}
