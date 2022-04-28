@@ -268,3 +268,19 @@ function countSmileys(arr) {
     return arr.filter(e => faces.indexOf(e) != -1 ).length
   }
 }
+
+//convert boolean to a string
+//https://www.codewars.com/kata/551b4501ac0447318f0009cd
+
+function booleanToString(b){
+  return String(b)
+}
+
+
+//get the character in the middle of a string
+//https://www.codewars.com/kata/56747fd5cb988479af000028
+
+function getMiddle(s){
+  return s.length % 2 == 0 ? `${s[s.length/2 -1]}${s[s.length /2]}` :
+   `${s[(s.length - 1)/2]}`
+ }
