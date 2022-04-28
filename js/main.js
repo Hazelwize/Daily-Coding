@@ -242,4 +242,29 @@ function solution(str){
 
 function reverseWords(str) {
   return str.split(' ').map(e => e.split('').reverse().join('')).join(' ')
+
+}
+
+
+//Find the smallest integer in the array
+//https://www.codewars.com/kata/55a2d7ebe362935a210000b2
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return args.sort((a,b)=> a-b)[0];
+    
+  }
+}
+
+
+//count the number of smiley faces in a string
+//https://www.codewars.com/kata/583203e6eb35d7980400002a
+
+function countSmileys(arr) {
+  if(arr.length == 0){
+    return 0
+  }else{
+    let faces = [':)',':D', ':-)',':-D',':~)',':~D',';)',';D', ';-)',';-D',';~)',';~D']
+    return arr.filter(e => faces.indexOf(e) != -1 ).length
+  }
 }
