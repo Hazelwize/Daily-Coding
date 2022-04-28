@@ -230,3 +230,16 @@ function solve(s){
   })
   return arr;
 }
+//Reverse the string passed into the function
+//https://www.codewars.com/kata/5168bb5dfe9a00b126000018
+function solution(str){
+  return[...str].reverse().join('')
+}
+
+//Reverse each word in a string
+//https://www.codewars.com/kata/5259b20d6021e9e14c0010d4
+
+
+function reverseWords(str) {
+  return str.split(' ').map(e => e.split('').reverse().join('')).join(' ')
+}
