@@ -291,6 +291,20 @@ function getMiddle(s){
 
  const stringToNumber = str => +str
 
+//replace duplicated characters with ) and single occurences with (
+//https://www.codewars.com/kata/54b42f9314d9229fd6000d9c
 
 
-
+ function duplicateEncode(word){
+  let obj = {}
+  word.toLowerCase().split('').forEach(el =>{
+    obj[el] ? obj[el]++ : obj[el] = 1;
+  })
+  return word.toLowerCase().split('').map(e =>{
+    if(obj[e] > 1){
+      return ')'
+    }else{
+      return '('
+    }
+  }).join('')
+}
