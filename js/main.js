@@ -284,3 +284,13 @@ function getMiddle(s){
   return s.length % 2 == 0 ? `${s[s.length/2 -1]}${s[s.length /2]}` :
    `${s[(s.length - 1)/2]}`
  }
+
+
+//Convert a string to a number
+//https://www.codewars.com/kata/544675c6f971f7399a000e79
+
+ const stringToNumber = str => +str
+
+
+
+
