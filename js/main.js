@@ -334,3 +334,20 @@ function numberToString(num) {
 function descendingOrder(n){
   return  Number([...(n.toString())].sort((a,b) => b - a).join(''))
  }
+
+//Count by X
+//https://www.codewars.com/kata/5513795bd3fafb56c200049e
+
+ function countBy(x, n) {
+  let z = [];
+  for(let i = 1; i <= n; i++){
+    z.push(x * i)
+  }
+  return z;
+}
+
+//Invert Values
+//https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad
+
+
+const invert = array => array.map(e => e * -1)
