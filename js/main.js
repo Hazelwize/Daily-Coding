@@ -319,3 +319,18 @@ var uniqueInOrder=function(iterable){
     }
   })
 }
+
+
+// Convert a Number to a String
+//https://www.codewars.com/kata/5265326f5fda8eb1160004c8
+
+function numberToString(num) {
+  return String(num)
+}
+
+//write a number in descending order from greatest to least
+//https://www.codewars.com/kata/5467e4d82edf8bbf40000155
+
+function descendingOrder(n){
+  return  Number([...(n.toString())].sort((a,b) => b - a).join(''))
+ }
