@@ -378,3 +378,28 @@ function friend(friends){
 function opposite(number) {
   return number * -1;
 }
+
+//Find Maximum and Minimum Values of a list
+//https://www.codewars.com/kata/577a98a6ae28071780000989
+
+var min = function(list){
+    
+  return Math.min(...list)
+}
+
+var max = function(list){
+  
+  return Math.max(...list)
+}
+
+//Remove exclamation marks
+//https://www.codewars.com/kata/57a0885cbb9944e24c00008e
+
+function removeExclamationMarks(s) {
+  return [...s].filter(e => e != '!').join('')
+}
+
+//Return Negative
+//https://www.codewars.com/kata/55685cd7ad70877c23000102
+
+const makeNegative = num => num > 0 ? -num : num;
