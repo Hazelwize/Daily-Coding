@@ -351,3 +351,30 @@ function descendingOrder(n){
 
 
 const invert = array => array.map(e => e * -1)
+
+//Reversed Sequence
+//https://www.codewars.com/kata/5a00e05cc374cb34d100000d
+
+
+const reverseSeq = n => {
+  let arr = [];
+  while(n > 0){
+    arr.push(n)
+    n--
+  }
+  return arr;
+};
+
+//Friend or Foe?
+//https://www.codewars.com/kata/55b42574ff091733d900002f
+
+function friend(friends){
+  return friends.filter( names => names.length == 4)
+}  
+
+//Opposite number
+//https://www.codewars.com/kata/56dec885c54a926dcd001095
+
+function opposite(number) {
+  return number * -1;
+}
