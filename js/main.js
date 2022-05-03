@@ -403,3 +403,21 @@ function removeExclamationMarks(s) {
 //https://www.codewars.com/kata/55685cd7ad70877c23000102
 
 const makeNegative = num => num > 0 ? -num : num;
+
+
+//Beginner Series #4 Cockroach
+//https://www.codewars.com/kata/55fab1ffda3e2e44f00000c6
+
+function cockroachSpeed(s) {
+  return Math.floor(s * 27.7778)
+}
+
+//Remove the minimum
+//https://www.codewars.com/kata/563cf89eb4747c5fb100001b
+
+function removeSmallest(numbers) {
+  let lowest = numbers.indexOf(Math.min(...numbers)) 
+  let arr =  numbers.slice()
+  arr.splice(lowest,1)
+  return arr
+}
