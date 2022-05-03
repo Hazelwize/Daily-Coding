@@ -452,3 +452,21 @@ function noSpace(x){
  function simpleMultiplication(number) {
   return number % 2 == 0 ? number * 8 : number * 9;
 }
+
+//Odd or Even?
+//https://www.codewars.com/kata/5949481f86420f59480000e7
+
+function oddOrEven(arr) {
+  return arr.reduce((a,b) => a + b,0) % 2 ? "odd" : "even"
+}
+
+//Who like it?
+//https://www.codewars.com/kata/5266876b8f4bf2da9b000362
+
+function likes(n) {
+  return n.length > 3 ? `${n[0]}, ${n[1]} and ${n.length -2} others like this` :
+  n.length > 2 ? `${n[0]}, ${n[1]} and ${n[2]} like this` :
+  n.length > 1 ? `${n[0]} and ${n[1]} like this` :
+  n[0] == undefined ?  "no one likes this" : `${n[0]} likes this`
+  
+}
