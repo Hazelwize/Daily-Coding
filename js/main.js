@@ -421,3 +421,19 @@ function removeSmallest(numbers) {
   arr.splice(lowest,1)
   return arr
 }
+
+
+//Third Angle of a Triangle
+//https://www.codewars.com/kata/5a023c426975981341000014
+
+function otherAngle(a, b) {
+  return 180 - a - b
+}
+
+//Basic Mathematical Operations
+//https://www.codewars.com/kata/57356c55867b9b7a60000bd7
+
+function basicOp(operation, value1, value2)
+{
+  return eval(`${value1}${operation}${value2}`)
+}
