@@ -437,3 +437,18 @@ function basicOp(operation, value1, value2)
 {
   return eval(`${value1}${operation}${value2}`)
 }
+
+//Remove String Spaces
+//https://www.codewars.com/kata/57eae20f5500ad98e50002c5
+
+function noSpace(x){
+  return [...x].filter(e => e != ' ').join('')
+ }
+
+
+ //Simple Multiplication
+ //https://www.codewars.com/kata/583710ccaa6717322c000105
+
+ function simpleMultiplication(number) {
+  return number % 2 == 0 ? number * 8 : number * 9;
+}
