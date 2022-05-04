@@ -480,3 +480,25 @@ function alphabetPosition(text) {
          .map(e => abc.indexOf(e)+1).join(' ')
 }
 
+//Sum of odd numbers
+//https://www.codewars.com/kata/55fd2d567d94ac3bc9000064
+
+function rowSumOddNumbers(n) {
+  return n**3
+}
+
+//Equal sides of an array
+//https://www.codewars.com/kata/5679aa472b8f57fb8c000047
+
+function findEvenIndex(arr){
+  let result = -1
+  arr.forEach((e,i) => {
+    let sideOne = arr.slice(0,i)
+    let sideTwo = arr.slice(i+1)
+    if(sideOne.reduce((a,b) => a + b, 0) == sideTwo.reduce((a,b) => a + b ,0)){
+      result = i ;
+    }
+  })
+  return result
+
+}
