@@ -470,3 +470,13 @@ function likes(n) {
   n[0] == undefined ?  "no one likes this" : `${n[0]} likes this`
   
 }
+
+//Replace With Alphabet Position
+//https://www.codewars.com/kata/546f922b54af40e1e90001da
+
+function alphabetPosition(text) {
+  let abc = 'abcdefghijklmnopqrstuvwxyz'
+  return [...text.toLowerCase()].filter(e => abc.indexOf(e) != -1)
+         .map(e => abc.indexOf(e)+1).join(' ')
+}
+
