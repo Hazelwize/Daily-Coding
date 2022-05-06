@@ -502,3 +502,18 @@ function findEvenIndex(arr){
   return result
 
 }
+
+//Sum Mixed Array
+//https://www.codewars.com/kata/57eaeb9578748ff92a000009
+
+function sumMix(x){
+  return x.reduce((a,b) => a + +b,0)
+}
+
+
+//Alternating Case
+//https://www.codewars.com/kata/56efc695740d30f963000557
+
+String.prototype.toAlternatingCase = function () {
+  return this.split('').map(e => e < 'a' ? e.toLowerCase():e.toUpperCase()).join('')
+}
