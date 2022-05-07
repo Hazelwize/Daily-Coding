@@ -530,3 +530,108 @@ function hero(bullets, dragons){
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(dadYearsOld - sonYearsOld * 2)
 }
+
+//Function 1 -hello world
+//https://www.codewars.com/kata/523b4ff7adca849afe000035
+
+function greet() {
+  let hello = "aaneowkhboekslejqoeivlskapeolnvmxieosjakei fpqowiwfjbnslodkqplsrbnvmsilapeoridbnvieo!"
+  return [...hello].filter((e,i) => {
+    if(i % 7 === 0 && i > 5){
+      return hello[i]
+    } 
+  }).join('')
+  }
+
+//Sentence Smash
+//https://www.codewars.com/kata/53dc23c68a0c93699800041d
+
+  function smash (words) {
+    return words.join(' ')
+ };
+
+//Correct the mistakes of the character recognition software
+//https://www.codewars.com/kata/577bd026df78c19bca0002c0
+
+ function correct(string){
+  return[...string].map(e => {
+    if(e == '5'){
+      return 'S'
+    }else if(e == '0'){
+      return 'O'
+    }else if(e == '1'){
+      return 'I'
+    }else{
+      return e
+    }
+  }).join('')
+}
+
+//Are You Playing Banjo?
+//https://www.codewars.com/kata/53af2b8861023f1d88000832
+
+function abbrevName(name){
+  return name.split(' ').map(e => e[0].toUpperCase()).join('.')
+}
+
+//Sort The Odd
+//https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
+
+function sortArray(array) {
+  let odd = array.slice().filter(e => e % 2 != 0).sort((a,b)=> a - b)
+  let i = 0
+  return array.map(e => {
+    return e % 2 == 0 ? e : odd[i++]
+  })
+}
+
+//Switch it up!
+//https://www.codewars.com/kata/5808dcb8f0ed42ae34000031
+
+function switchItUp(number){
+  switch(number){
+   case 0 :
+    return 'Zero'
+    break;
+   case 1 :
+    return 'One'
+    break;
+   case 2 :
+    return 'Two'
+    break;
+   case 3 : 
+    return 'Three'
+    break;
+   case 4 :
+    return 'Four'
+    break;
+   case 5 :
+    return 'Five'
+    break;
+   case 6 : 
+    return 'Six'
+    break;
+   case 7 :
+    return 'Seven'
+    break;
+   case 8 :
+    return 'Eight'
+    break;
+   case 9 : 
+    return 'Nine'
+    break;
+ }
+}
+
+//Take a ten minutes walk
+//https://www.codewars.com/kata/54da539698b8a2ad76000228
+
+function isValidWalk(walk) {
+  if(walk.length == 10){
+    let dir = {}
+    walk.forEach(e =>{
+      dir[e] ? dir[e]++ : dir[e] = 1
+    })
+    return dir.n == dir.s && dir.e == dir.w 
+  }
+}
