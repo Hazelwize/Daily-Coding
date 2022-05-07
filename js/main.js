@@ -517,3 +517,16 @@ function sumMix(x){
 String.prototype.toAlternatingCase = function () {
   return this.split('').map(e => e < 'a' ? e.toLowerCase():e.toUpperCase()).join('')
 }
+
+//Is he gonna survive?
+
+function hero(bullets, dragons){
+  return bullets/2 >= dragons
+}
+
+//Twice as old
+//https://www.codewars.com/kata/5b853229cfde412a470000d0
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - sonYearsOld * 2)
+}
