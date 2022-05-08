@@ -642,3 +642,37 @@ function isValidWalk(walk) {
 function find_average(array) {
   return array[0] == undefined ? 0 : array.reduce((acc, c) => acc + c, 0) / array.length
 }
+
+//Quarter of the year
+//https://www.codewars.com/kata/5ce9c1000bab0b001134f5af
+
+const quarterOf = (month) => {
+  return Math.ceil(month/3)
+}
+
+//Detect Pangram
+//https://www.codewars.com/kata/545cedaa9943f7fe7b000048
+
+function isPangram(string){
+  let abc = 'abcdefghijklmnopqrstuvwxyz'
+  let result = [...abc].filter(e => {
+    return string.toLowerCase().indexOf(e) == -1
+  })
+  return result.length == 0 
+}
+
+//You're a square!
+//https://www.codewars.com/kata/54c27a33fb7da0db0100040e
+
+var isSquare = function(n){
+  return Number.isInteger(Math.sqrt(n))
+}
+
+//Transportation on vacation
+//https://www.codewars.com/kata/568d0dd208ee69389d000016
+
+function rentalCarCost(d) {
+  return d >= 7 ? d * 40 - 50 : 
+  d >= 3 ? d * 40 - 20:
+  d * 40
+}
