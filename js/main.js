@@ -635,3 +635,10 @@ function isValidWalk(walk) {
     return dir.n == dir.s && dir.e == dir.w 
   }
 }
+
+//Calculate Average
+//https://www.codewars.com/kata/57a2013acf1fa5bfc4000921
+
+function find_average(array) {
+  return array[0] == undefined ? 0 : array.reduce((acc, c) => acc + c, 0) / array.length
+}
