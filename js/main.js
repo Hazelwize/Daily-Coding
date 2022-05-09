@@ -676,3 +676,16 @@ function rentalCarCost(d) {
   d >= 3 ? d * 40 - 20:
   d * 40
 }
+
+
+//Sum without highest and lowest numbers
+//https://www.codewars.com/kata/576b93db1129fcf2200001e6
+
+function sumArray(array) {
+  if(array == null || array[1] == undefined){
+    return 0
+  }else{
+    let subVal = (Math.min(...array) + Math.max(...array))
+    return array.reduce((a , b) => a + b) - subVal
+  }
+}
