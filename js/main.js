@@ -689,3 +689,8 @@ function sumArray(array) {
     return array.reduce((a , b) => a + b) - subVal
   }
 }
+
+//Fake binary
+//https://www.codewars.com/kata/57eae65a4321032ce000002d
+
+const fakeBin = x => [...x].map(e => e < 5 ? 0 : 1).join('')
