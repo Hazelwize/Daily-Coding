@@ -13,7 +13,7 @@
 function solution(string){
     return[...string].map((e,i) =>{
        return e == e.toUpperCase() ? e = ' ' + e : e
-    } ).join('')
+    }).join('')
 }
 
 
