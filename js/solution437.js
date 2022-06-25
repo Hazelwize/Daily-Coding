@@ -9,4 +9,4 @@ function factorial(n){
       return result 
     }
     return 1
-  }
+}
