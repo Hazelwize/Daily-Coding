@@ -3,5 +3,5 @@
 // So, you need to check if there is gold in the bucket, and if so, return True/true. If not, return False/false.
 
 function checkTheBucket(bucket){
-    return bucket.includes('gold')
+return bucket.includes('gold')
   }
