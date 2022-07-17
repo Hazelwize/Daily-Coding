@@ -5,6 +5,6 @@ This repo will always be updated at least once per day. I like to keep problem s
 
 **Tech used:** JavaScript
 
-These are all coding challenges from Codewars or Leet Code. I don't specify which exact test it is as to keep the answers difficult to find for others taking the challenge.
+These are all coding challenges from Codewars or Leet Code. I don't specify which exact test it is as to keep the answers difficult to find for others taking the challenge as well.
 
 
