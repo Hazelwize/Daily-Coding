@@ -11,5 +11,5 @@
 // 'James Stevens'
 
 function combineNames(first, last){
-    return first+" "+last
+    return first+" "+last;
 }
