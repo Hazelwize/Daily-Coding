@@ -27,3 +27,6 @@ function generateHashtag (str) {
       return '#' + result
     }
  }
+
+
+console.log(generateHashtag('skekkt  efiiehw  iwfiweflkske eifie'))

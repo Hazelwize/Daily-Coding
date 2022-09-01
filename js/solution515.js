@@ -34,4 +34,6 @@ function anagrams(word, words) {
     })
     return result
 }
+
+console.log(anagrams('needle',['eedlen', 'awskdlf', 'nedlee', 'zebra']))
   
