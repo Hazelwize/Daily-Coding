@@ -9,7 +9,6 @@
 //     Repetition in array/list's numbers could occur, so don't remove duplications.
 
 // Input >> Output Examples
-
 // arr=[3,1,2]            n=2    ==> return 2 
 // arr=[15,20,7,10,4,3]   n=3    ==> return 7 
 // arr=[2,169,13,-5,0,-1] n=4    ==> return 2 
