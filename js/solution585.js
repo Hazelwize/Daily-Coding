@@ -31,7 +31,7 @@
 
 //Making Optimal
 function dup(s) {
-    let words = String(s)
+    let words = s.toString()
     let result = ''
     for(let i = 0; i < words.length; i++){
       if(words[i] !== words[i-1]){
