@@ -9,13 +9,13 @@
 const orderedCount = function (text) {
     const hash = {}
     const result = []
-    let count = 0
+    let index = 0
     for(const l of text){
       if(hash[l] !== undefined){
         result[hash[l]][1]++
       }else{
-        hash[l] = count
-        count++
+        hash[l] = index
+        index++
         result.push([l,1])
       }
     }
