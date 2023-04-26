@@ -40,10 +40,8 @@ function convertText(str){
       return ''
     }
     if(str.length >= 4){
-      console.log(str)
       return str[0] + String(str.length - 2) + str[str.length - 1] 
     }else{
-      console.log(str)
       return str
     }
 }
