@@ -42,11 +42,11 @@ var createCounter = function(init) {
     return {
         init: init,
         increment: function(){
-            this.init += 1
+            ++this.init
             return this.init
         },
         decrement: function(){
-            this.init -= 1
+            --this.init
             return this.init
         },
         reset: function(){
