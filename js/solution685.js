@@ -53,7 +53,6 @@
 //     1 <= operations.length <= 100
 //     operations[i] will be either "++X", "X++", "--X", or "X--".
 
-
 var finalValueAfterOperations = function(operations) {
     let operator = {
         '--X' : -1,
@@ -61,9 +60,5 @@ var finalValueAfterOperations = function(operations) {
         'X++' : 1,
         '++X' : 1
     }
-    let x = 0;
-    for(let task of operations){
-        x += operator[task]
-    }
-    return x
+    return operations.reduce((a,b) => a + operator[b], 0)
 };
