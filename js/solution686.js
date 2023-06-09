@@ -39,9 +39,13 @@
 //     target is a lowercase English letter.
 
 
-var nextGreatestLetter = function(letters, target) {
-    for( let letter of letters){
-        if(letter > target) return letter
-    }
-    return letters[0]
-};
+var nextGreatestLetter = function(letters, target, start=0, end=letters.length - 1){
+    if(letters[end] <= target) return letters[0]
+    if(letters[start] > target) return letters[start]
+    let mid = Math.floor((end + start) / 2)
+    if(letters[mid] > target){
+        return nextGreatestLetter(letters, target, start, mid)
+    }else{
+        return nextGreatestLetter(letters, target, mid + 1, end)
+    }       
+}
